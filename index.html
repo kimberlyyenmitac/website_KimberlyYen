@@ -11,7 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link href="./src/style.css" rel="stylesheet" />
-    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -66,7 +81,6 @@
             <div class="container mx-auto">
                 <!-- Short_descrption -->
                 <div class="text-4xl text-center">
-                    <!-- <img src="https://picsum.photos/id/551/200/200"> -->
                     <div class="text px-8 pt-8 font-[700]">
                         <p>
                             Hi
@@ -75,17 +89,16 @@
                         </p>
                         <h1 class="text-orange-600 py-8">Kimberly Yen</h1>
                         <h2>Front-end Developer</h2>
-                        <div class="mx-auto my-16 lg:w-3/5">
-                            <iframe class="w-full" height="400" src="https://www.youtube.com/embed/6p18oSERP3U"
+                        <!-- <div class=" mx-auto my-16 lg:w-3/5 ">
+                            <iframe class=" w-full" height="500" src="https://www.youtube.com/embed/6p18oSERP3U"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                        </div>
+                        </div> -->
                         <div class="flex">
                             <img class="mx-auto" src="./src/img/hero.svg" alt="frontend dev" />
                         </div>
                     </div>
-                    <!-- <img class="ml-auto" src="https://picsum.photos/id/996/200/200"> -->
                 </div>
             </div>
         </section>
@@ -195,7 +208,7 @@
                     <!-- button -->
                     <a href="https://www.pinterest.com/KimberlyYen0130/" target="_blank">
                         <button class="flex flex-row mx-auto px-8 my-10 rounded-full border-2 border-orange-500 py-2">
-                            <span class="pr-3">
+                            <span class="pr-3 my-auto">
                                 <svg fill="#C2410B" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px"
                                     height="30px">
                                     <path
@@ -275,7 +288,7 @@
                     <!-- button -->
                     <a class="mt-auto" href="https://github.com/KimberlyYen" target="_blank">
                         <button class="flex flex-row mx-auto px-8 my-10 rounded-full border-2 border-orange-500 py-2">
-                            <span class="pr-3">
+                            <span class="pr-3 my-auto">
                                 <svg class="h-8 w-8 text-orange-900" width="24" height="24" viewBox="0 0 24 24"
                                     stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -435,7 +448,7 @@
             Top
         </a>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="./src/index.js"></script>
 </body>
 
